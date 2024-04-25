@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(11, 93, 38);
+  background: radial-gradient(
+    circle,
+    rgba(11, 93, 38, 1) 0%,
+    rgba(0, 0, 0, 1) 91%
+  );
+  padding: 1rem;
+}
+.container h1 {
+  color: rgb(180, 203, 3);
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 15px;
+  width: auto;
+  background-color: rgb(48, 48, 48);
+  margin-top: 1rem;
+}
+.title label {
+  color: white;
+  display: block;
+}
+.title input {
+  height: 2rem;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  width: 20rem;
+  padding: 3px;
+  font-weight: 500;
+}
+.desc label {
+  color: white;
+  display: block;
+}
+.desc textarea {
+  height: 2rem;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  width: 20rem;
+  height: 5rem;
+  padding: 3px;
+  font-weight: 500;
+  resize: none;
+}
+.btn {
+  padding: 1rem 4rem;
+  background-color: rgb(220, 220, 220);
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(1, 94, 34);
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgb(255, 255, 198);
+  transition-duration: 0.4s;
+}
+.todoContainer {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.todo {
+  background-color: rgb(48, 48, 48);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.todo h3 {
+  color: yellow;
+  margin-right: 10px;
+}
+.todo i {
+  color: red;
+  cursor: pointer;
+}
+.todo div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo p {
+  color: white;
+  font-size: small;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .todoContainer {
+    grid-template-columns: 1fr;
+  }
+}
